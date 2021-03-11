@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+   
+
+    font-family: 'Reem Kufi', sans-serif;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    margin:0px !important;
+    padding: 0px !important;
+
+    height: 100vh;
+    width: 100vw;
+   
+    background-size: 100%;
+    
+}
+
+.morning {
+    background: linear-gradient(180deg, #FBED96 36.29%, #ABECD6 100%) no-repeat center center;
+}
+.afternoon {
+    background: linear-gradient(342.65deg, #FFE259 0%, #FFA751 60.68%)no-repeat center center;
+}
+.night {
+    background: linear-gradient(162.44deg, #16222A 42.58%, #3A6073 100%)no-repeat center center;
+}
+.dawn {
+    background: linear-gradient(0deg, #292E49 30.42%, #646A8D 100%)no-repeat center center;
+}
+
+section.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3rem;
+}
+section.container h1 {
+    font-size: 45px;
+    color: white;
+
+    text-shadow: 0px 4px 4px rgba(131, 124, 124, 0.25);
+}
+.cloud1 {
+    position: fixed;
+    top: 7rem;
+    left: -2rem;
+}
+.cloud2 {
+    position: fixed;
+    top: 14rem;
+    right: -2.5rem;
+}
+.cloud3 {
+    position: fixed;
+    top: 23rem;
+    left: 2rem;
+}
+
+.star1 {
+    position: fixed;
+    top: 14rem;
+    left: 2rem;
+}
+.star2 {
+    position: fixed;
+    top: 0rem;
+    left: -0.5rem;
+}
+.star3 {
+    position: fixed;
+    top: 5rem;
+    right: 3rem;
+}
+.star4 {
+    position: fixed;
+    top: 12rem;
+    right: 2rem;
+}
+.star5 {
+    position: fixed;
+    top: 22rem;
+    right: 9rem;
+}
+.star6 {
+    position: fixed;
+    top: 24rem;
+    left: 5rem;
+}
