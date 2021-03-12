@@ -7,6 +7,9 @@ const body = document.querySelector("body");
 //Imagem onde ficará a lua ou o sol
 const sunOrMoon = document.querySelector(".sunOrMoon");
 
+//ícone do site
+const icon = document.querySelector(".icon");
+
 //stars
 const stars1 = document.querySelector(".star1");
 const stars2 = document.querySelector(".star2");
@@ -26,7 +29,6 @@ const clouds = [cloud1, cloud2, cloud3];
 const date = new Date(); //Retorna o objeto Date
 
 let hour = date.getHours(); //Retorna a hora atual
-let minutes = date.getMinutes(); //Retorna os minutos da hora atual
 
 //DAWN
 if (hour >= 0) {
@@ -34,6 +36,9 @@ if (hour >= 0) {
   body.classList.remove("night");
   body.classList.add("dawn");
   sunOrMoon.src = "/images/moon.png";
+
+  icon.href = "/images/madrugada.jpg";
+  document.title = "Boa Madrugada";
 
   clouds[0].style.display = "none";
   clouds[1].style.display = "none";
@@ -49,10 +54,14 @@ if (hour >= 0) {
 
 //MORNING
 if (hour >= 5) {
-  greeting.innerHTML = "Bom Dia";
   body.classList.remove("dawn");
   body.classList.add("morning");
+
+  greeting.innerHTML = "Bom Dia";
   sunOrMoon.src = "/images/sun.png";
+
+  icon.href = "/images/manha.jpg";
+  document.title = "Bom Dia";
 
   clouds[0].style.display = "block";
   clouds[1].style.display = "block";
@@ -70,7 +79,10 @@ if (hour >= 5) {
 if (hour >= 12) {
   greeting.innerHTML = "Boa Tarde";
   body.classList.remove("morning");
-  body.classList.add("night");
+  body.classList.add("afternoon");
+
+  icon.href = "/images/tarde.jpg";
+  document.title = "Boa Tarde";
 
   sunOrMoon.src = "/images/sun.png";
   clouds[0].style.display = "block";
@@ -84,6 +96,9 @@ if (hour >= 18) {
   body.classList.remove("afternoon");
   body.classList.add("night");
   sunOrMoon.src = "/images/moon.png";
+
+  icon.href = "/images/noite.jpg";
+  document.title = "Boa Noite";
 
   clouds[0].style.display = "none";
   clouds[1].style.display = "none";
