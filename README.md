@@ -18,8 +18,8 @@ let hour = date.getHours(); //Retorna a hora atual
 
 ## Protótipo
 
-![Design preview for the Rock, Paper, Scissors coding challenge](./design/afternoon.png)
-![Design preview for the Rock, Paper, Scissors coding challenge](./design/nigth.png)
+![afternoon](/design/afternoon.PNG)
+![Nigth](/design/nigth.PNG)
 
 Também existem as telas de **Bom Dia** e **Boa Madrugada**.
 
